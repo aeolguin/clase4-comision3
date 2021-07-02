@@ -44,7 +44,18 @@ accionar.addEventListener('click', ()=> {
     //Asincronico.
 })
 
+function imprimeConFuncion (dato) {
+    if (dato === 'imprimir') {
+        let funcionInterna = () => {
+            console.log('El dato ingresado es correcto y se imprime.')
+        }
+        funcionInterna()
 
+    }else {
+        console.log('el dato no es el esperdo')
+    }
+}
+imprimeConFuncion('imprimir');
 
 
 
